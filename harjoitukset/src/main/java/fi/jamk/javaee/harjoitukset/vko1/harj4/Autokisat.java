@@ -1,5 +1,7 @@
 package fi.jamk.javaee.harjoitukset.vko1.harj4;
 
+
+
 public class Autokisat {
 
 	public static void main(String[] args) {
@@ -9,16 +11,26 @@ public class Autokisat {
 		temp.setCar(a1);
 		a1.setDriver(temp);
 		Auto a2 = new Auto(new Moottori(1200, 12, 6), new Ajaja());
+		temp = new Ajaja(a2);
+		a2.setDriver(temp);
+		//temp.setCar(a2);
 		a2.setMark("Mobiili");
 		a2.setModel("Supreme");
 		a2.setTopSpeed(360);
 		Auto a3 = new Auto();
+		temp = a3.getDriver();
+		temp.setCar(a3);
 		a3.setMark("Mobiili");
 		a3.setModel("Supreme");
 		a3.setTopSpeed(360);
-		a3.setEngine(new Moottori());
-		a3.setDriver(new Driver(a3, ));
+		a3.setEngine(new Moottori(500, 50, 10));
+		a3.setDriver(new Ajaja(a3, "Hauki Kuusakoskelta", behaviors.aggressive));
 		
+		String viesti = a1.getInformation();
+		viesti += "\n\n" + a2.getInformation();
+		viesti += "\n\n" + a3.getInformation();
+		
+		System.out.println(viesti);
 	}
 
 }

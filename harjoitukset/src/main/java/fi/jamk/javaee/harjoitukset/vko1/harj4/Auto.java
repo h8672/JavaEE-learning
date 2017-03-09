@@ -43,4 +43,19 @@ public class Auto {
 	public int getTopSpeed() {return this.topSpeed;}
 	public Moottori getEngine() {return this.engine;}
 	public Ajaja getDriver() {return this.driver;}
+	public String getInformation(){
+		Ajaja temp = this.driver;
+		Moottori temp2 = this.engine;
+		Auto temp3 = temp.getCar();
+		String viesti = "auto:\n - merkki: " + this.getMark()
+				+ "\n - malli: " + this.getModel()
+				+ "\n - top speed: " + this.getTopSpeed()
+				+ "\n - Moottori: " + temp2.getPower()
+				+ "\n   - sylintereitä: " + temp2.getCylinders()
+				+ "\n   - sylintereitä rikki: " + temp2.getBrokenCylinders()
+				+ "\n - ajaja: " + temp.getName()
+				+ "\n   - lempiauto: " + temp3.getMark() + " " + temp3.getModel()
+				+ "\n   - luonne (0 rauhallinen - 1 aggressiivinen): " + temp.getBehavior();
+		return viesti;
+	}
 }

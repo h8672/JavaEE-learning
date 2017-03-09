@@ -5,39 +5,39 @@ enum behaviors {
 };
 
 public class Ajaja {
-	private Auto car;
+	private Auto favoritecar;
 	private String name; 
 	private behaviors behavior;
 
 	//Constructors
 	Ajaja(){
-		this.car = new Auto();
+		//this.car = new Auto();
 		this.name = "Mika Häkkinen";
 		this.behavior = behaviors.relaxed;
 	}
 	Ajaja(Auto car){
-		this.car = car;
+		this.favoritecar = car;
 		this.name = "Muka Ruusberg";
 		this.behavior = behaviors.normal;
 	}
 	Ajaja(String name, behaviors behavior){
-		this.car = new Auto();
+		this.favoritecar = new Auto();
 		this.name = name;
 		this.behavior = behavior;
 	}
 	Ajaja(Auto car, String name, behaviors behavior){
-		this.car = car;
+		this.favoritecar = car;
 		this.name = name;
 		this.behavior = behavior;
 	}
 	
 	//Set new value to private values
-	public void setCar(Auto car) {this.car = car;}
+	public void setCar(Auto carr) {this.favoritecar = carr;}
 	public void setName(String name) {this.name = name;}
 	public void setBehavior(behaviors beh) {this.behavior = beh;}
 	
 	//Get values from private values
-	public Auto getCar(){return this.car;}
+	public Auto getCar(){return this.favoritecar;}
 	public String getName(){return this.name;}
 	public double getBehavior(){
 		double value;
