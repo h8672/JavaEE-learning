@@ -1,0 +1,24 @@
+# Glassfish - sovelluspalvelin
+
+## Hinta
+
+* Ilmainen
+
+## Ominaisuudet
+
+* Open source
+
+## Käyttäjä palautteet
+⁻ hyvät
+- huonot
+
+Vertailu muihin sovelluspalvelimiin...
+
+Oracle glassfish
+Oracle Weblogic
+JBOSS
+IBM WebSpehere
+Fujitsu Interstage
+TmaxSoft
+Apache Geronimo
+
