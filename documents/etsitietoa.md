@@ -1,5 +1,7 @@
 # Glassfish - sovelluspalvelin
 
+Tekijät Juho Nissi & Juha-Matti Kokkonen
+
 ## Hinta
 
 * Ilmainen
